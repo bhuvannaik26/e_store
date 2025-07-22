@@ -1,4 +1,4 @@
-home.js // js/home.js
+// js/home.js
 
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('featured-products');

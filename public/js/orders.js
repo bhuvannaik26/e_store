@@ -1,4 +1,4 @@
-order.js// js/orders.js
+// js/orders.js
 
 const API_ORDERS = `${API_BASE}/orders`;
 const user = JSON.parse(localStorage.getItem('user'));
