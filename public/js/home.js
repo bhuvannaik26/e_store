@@ -1,5 +1,16 @@
 // js/home.js
 
+const API_BASE = window.location.hostname.includes('localhost')
+  ? 'http://localhost:5000/api'
+  : 'https://e-store-2a4a.onrender.com/api';
+
+// Reusable fetch function
+async function fetchAPI(endpoint) {
+  const res = await fetch(`${API_BASE}${endpoint}`);
+  if (!res.ok) throw new Error('Failed to fetch data');
+  return await res.json();
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('featured-products');
 

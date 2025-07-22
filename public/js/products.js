@@ -1,3 +1,5 @@
+// Set deployed backend API base URL
+const API_BASE = 'https://e-store-2a4a.onrender.com/api';
 const API_PRODUCTS = `${API_BASE}/products`;
 
 let products = [];
@@ -11,6 +13,7 @@ async function loadProducts() {
     displayProducts(products);
   } catch (err) {
     console.error('Error fetching products:', err);
+    alert('❌ Failed to load products. Please try again later.');
   }
 }
 
@@ -45,7 +48,7 @@ function showDetails(productId) {
   document.getElementById('detailTitle').textContent = selectedProduct.name;
   document.getElementById('detailImage').src = selectedProduct.image;
   document.getElementById('detailDesc').textContent = selectedProduct.description;
-  document.getElementById('detailPrice').textContent = selectedProduct.price;
+  document.getElementById('detailPrice').textContent = `₹${selectedProduct.price}`;
   document.getElementById('detailStock').textContent = selectedProduct.countInStock;
   document.getElementById('qtyInput').value = 1;
 
