@@ -1,5 +1,8 @@
 // js/api.js
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = window.location.hostname.includes('localhost')
+  ? 'http://localhost:5000/api'
+  : 'https://e-store-2a4a.onrender.com/api';
+
 
 async function fetchAPI(endpoint, options = {}) {
   const res = await fetch(`${API_BASE}${endpoint}`, options);
