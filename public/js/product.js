@@ -1,5 +1,3 @@
-// Set API base to Render deployment URL
-const API_BASE = 'https://e-store-2a4a.onrender.com/api';
 const API_PRODUCTS = `${API_BASE}/products`;
 
 // Get product ID from query string (?id=...)

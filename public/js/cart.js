@@ -1,6 +1,3 @@
-// ✅ Use Render deployed base URL
-const API_BASE = 'https://e-store-2a4a.onrender.com/api';
-
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 const API_PRODUCTS = `${API_BASE}/products`;
 const API_ORDERS = `${API_BASE}/orders`;
