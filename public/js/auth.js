@@ -1,6 +1,8 @@
 // js/auth.js
+const API_BASE = window.location.hostname.includes('localhost')
+  ? 'http://localhost:5000/api/auth'
+  : 'https://e-store-2a4a.onrender.com/api/auth';
 
-const API_BASE = 'http://localhost:5000/api/auth';
 
 // Register User
 async function registerUser(event) {
