@@ -1,6 +1,6 @@
 // js/orders.js
 
-const API_ORDERS = 'http://localhost:5000/api/orders';
+const API_ORDERS = `${API_BASE}/orders`;
 const user = JSON.parse(localStorage.getItem('user'));
 const ordersContainer = document.getElementById('ordersContainer');
 

@@ -1,6 +1,6 @@
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
-const API_PRODUCTS = 'http://localhost:5000/api/products';
-const API_ORDERS = 'http://localhost:5000/api/orders';
+const API_PRODUCTS = `${API_BASE}/products`;
+const API_ORDERS = `${API_BASE}/orders`;
 const currentUser = JSON.parse(localStorage.getItem('user'));
 let loadedProducts = [];
 

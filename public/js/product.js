@@ -1,4 +1,4 @@
-const API_PRODUCTS = 'http://localhost:5000/api/products';
+const API_PRODUCTS = `${API_BASE}/products`;
 
 // Get product ID from query string (?id=...)
 const urlParams = new URLSearchParams(window.location.search);
