@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Orders</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .order {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+
+    .order h3 {
+      margin-top: 0;
+    }
+
+    .order ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .order .btn {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: crimson;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order .btn:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+
+    .order-status {
+      font-weight: bold;
+      color: green;
+    }
+
+    .order-status.cancelled {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>📦 My Orders</h2>
+  <div id="ordersContainer"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand" href="index.html">🛍️ My Store</a>
+    <div class="ms-auto">
+      <a href="cart.html" class="btn btn-outline-light">🛒 Cart</a>
+      <a href="index.html" class="btn btn-outline-light">Home</a>
+      <a href="myorders.html" class="btn btn-outline-light">Orders</a>
+      <a href="profile.html" class="btn btn-outline-light">profile</a>
+      <a href="login.html" class="btn btn-outline-light">login</a>
+    </div>
+   </nav>
+  <script src="js/orders.js"></script>
+  <script src="js/authCheck.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <script src="js/auth.js" defer></script>
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">📝 Register</h2>
+    <form onsubmit="registerUser(event)" class="mx-auto" style="max-width: 400px;">
+      <div class="mb-3">
+        <label for="register-name" class="form-label">Full Name</label>
+        <input type="text" id="register-name" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="register-email" class="form-label">Email address</label>
+        <input type="email" id="register-email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="register-password" class="form-label">Password</label>
+        <input type="password" id="register-password" class="form-control" required />
+      </div>
+      <button type="submit" class="btn btn-success w-100">Register</button>
+      <p class="text-center mt-3">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>

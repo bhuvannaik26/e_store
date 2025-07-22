@@ -1,0 +1,14 @@
+/* css/styles.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
